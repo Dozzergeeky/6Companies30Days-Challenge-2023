@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 vector<int> findTwoElement(vector<int> arr, int n) {
     vector<int> ans;
     vector<bool> seen(n+1, false);
