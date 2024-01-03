@@ -33,7 +33,7 @@ public:
     string printMinNumberForPattern(string S){
         // code here 
         string result = "";
-        for(int index = 1; index <= S.size() + 1; index++){
+        for(int index = 1; index <= pattern.size() + 1; index++){
             result += '0' + index;
         }
         while(true)
@@ -42,12 +42,12 @@ public:
             bool isSorted = true;
             while(innerIndex < result.size())
             {
-                if(S[patternIndex] == 'D' && result[innerIndex] > result[innerIndex - 1])
+                if(pattern[patternIndex] == 'D' && result[innerIndex] > result[innerIndex - 1])
                 {
                     swap(result[innerIndex], result[innerIndex - 1]);
                     isSorted = false;
                 } 
-                if(S[patternIndex] == 'I' && result[innerIndex] < result[innerIndex - 1]){
+                if(pattern[patternIndex] == 'I' && result[innerIndex] < result[innerIndex - 1]){
                     swap(result[innerIndex], result[innerIndex - 1]);
                     isSorted = false;
                 }
