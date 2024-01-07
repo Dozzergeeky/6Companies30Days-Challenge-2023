@@ -78,7 +78,6 @@ public:
             int dist = (xCenter - x) * (xCenter - x) + (yCenter - y) * (yCenter - y);
             return dist <= radius * radius;
 
-
     }
 };
 // @lc code=end
